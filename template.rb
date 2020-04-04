@@ -21,7 +21,7 @@ def check_or_die!(config_name, expected, message)
   exit 1
 end
 
-check_or_die! "database", "postgresql, "You must choose postgres as your database with this template"
+check_or_die! "database", "postgresql", "You must choose postgres as your database with this template"
 check_or_die! "skip_javascript", true, "Please provide --skip-javascript (this template uses webpack to handle assets)"
 check_or_die! "skip_sprockets", true, "Please provide --skip-sprockets (this template uses webpack to handle assets)"
 
